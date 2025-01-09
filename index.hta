@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>CBT Nuggets Video Player</title>
+<style>
+
+
+</style>
+<HTA:APPLICATION
+    ID = "cbtNuggets"
+    APPLICATIONNAME = "CBT Nuggets Video Player"
+    BORDER= "thin" 
+    BORDERSTYLE = "normal"  
+    CAPTION = "yes"
+    ICON = "files/cbtnuggets.ico"
+    MAXIMIZEBUTTON = "NO"
+    MINIMIZEBUTTON = "YES"
+    SHOWINTASKBAR = "yes"
+    SCROLL="NO"
+    SINGLEINSTANCE = "no"
+    SYSMENU = "yes"
+    VERSION = "1.095"
+    WINDOWSTATE = "minimize"
+>
+
+<link rel="stylesheet" type="text/css" href="assets/style.css" title="style1" />
+<style>
+
+BODY {
+	color: white;
+}
+
+</style>
+<script>
+<!--
+function popUp(URL, width, height, arg) {
+	width = 803;
+	height = 577;
+	if(screen.width >= 1024) {
+		width = 960;
+		height = 700;
+	}
+	var scroll = 0;
+	if (arg == 'scroll') {
+		scroll = 1;
+	}
+	window.self.name = "autorun";
+	var player = window.open(URL, "player", "width=" + width + ",height=" + height + ",alwaysRaised=1, toolbar=0,location=0,directories=0,resizable=0,status=0,menubar=0,scrollbars=" + scroll);
+
+	self.opener = '_self';
+	self.close();
+
+}
+
+
+//-->
+</script>
+
+
+</head>
+
+<body bgcolor="#003063" onLoad="popUp('files/frameset.html', 803, 577)">
+
+<table border=0 width=100% height=100%>
+<tr><td valign=middle align=center>
+<img src="assets/cbtnuggets.gif">
+<p>
+<font style="font-size: 9pt;">A pop-up window has opened, unless it was prevented<br>from opening by pop-up blocker software on your computer.<p>If you cannot see it, click <a href="frameset.html" onClick="popUp('frameset.html', 803, 577); return false;" style="color: gold">here</a></font>
+<p>
+<img src="assets/series_214.gif">
+</td></tr>
+</table>
+
+</body>
+
+<html>
